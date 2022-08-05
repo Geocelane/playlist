@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000;
 
 connetToDb();
 
-app.get("/hello", (req, res) => {
+app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
