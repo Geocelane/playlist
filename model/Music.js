@@ -1,20 +1,20 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
 const musicSchema = new mongoose.Schema({
   name: {
-    type: string,
+    type: String,
     require: true,
   },
   author: {
-    type: string,
+    type: String,
     require: true,
   },
   linkImage: {
-    type: string,
+    type: String,
     require: true,
   },
   linkMusic: {
-    type: string,
+    type: String,
     require: true,
   },
 });

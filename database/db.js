@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const connetToDb = () => {
+const connectToDb = () => {
   mongoose.connect(process.env.DB_URI,{
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -8,4 +8,4 @@ const connetToDb = () => {
   .catch((err) => console.error(err));
 }
 
-module.exports = connetToDb;
+module.exports = connectToDb;
